@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>A&K Property Solutions LLC — Turnovers, Cleaning, Handyman</title>
-  <meta name="description" content="A&K Property Solutions LLC helps landlords, property managers, and homeowners reduce vacancy with fast, professional turnovers across NE Oklahoma."/>
+  <meta name="description" content="A&K Property Solutions LLC reduces vacancy with fast, professional turnovers across NE Oklahoma."/>
+  <link rel="icon" href="/img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,135 +13,149 @@
 </head>
 <body>
   <header class="container header">
-    <div class="brand">
-      <div class="logo">A<span class="amp">&amp;</span>K</div>
+    <a class="brand" href="#top" aria-label="A&K Property Solutions LLC home">
+      <img class="brand-mark" src="/img/ak-logo.png" alt="A&K Property Solutions LLC logo" />
       <div class="brand-text">
         <h1>A&K Property Solutions LLC</h1>
         <p>Reducing vacancy, one turnover at a time.</p>
       </div>
-    </div>
+    </a>
     <nav>
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
-      <a href="#quote">Quote Calculator</a>
+      <a href="#quote">Quote</a>
       <a href="#book">Book</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero container">
-    <div class="hero-text">
-      <h2>Fast, reliable turnovers for landlords & property managers in NE Oklahoma</h2>
-      <p>Cleaning • Handyman • Punch-list • Rent-ready. We turn units quickly so you can get back to cash flow.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#quote">Get an Instant Estimate</a>
-        <a class="btn ghost" href="#book">Book a Job</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <ul>
-        <li>✔ Turn-key: cleaning + repair</li>
-        <li>✔ Same-week availability (when open)</li>
-        <li>✔ Clear pricing and subcontractor payouts</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="services" class="container section">
-    <h3>Services</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Turnover Cleaning</h4>
-        <p>Top-to-bottom move-out clean: kitchens, baths, floors, baseboards, blinds, interior windows, and more.</p>
-      </div>
-      <div class="card">
-        <h4>Handyman & Punch-list</h4>
-        <p>Repairs, fixture swaps, caulking, drywall patches, hardware installs, smoke detectors, and safety items.</p>
-      </div>
-      <div class="card">
-        <h4>Make-Ready Add-ons</h4>
-        <p>Appliance deep clean, carpet shampoo, yard tidy, light painting/touch-ups, lock changes, trash haul-off.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing" class="container section">
-    <h3>Transparent Pricing Tiers</h3>
-    <p class="muted">These are starting estimates; final quotes depend on condition and add-ons selected. You can edit rates in <code>script.js</code>.</p>
-    <div class="tiers">
-      <div class="tier">
-        <h4>Basic</h4>
-        <p>Light make-ready for cleaner units. Great between quality tenants.</p>
-        <ul>
-          <li>Surface clean, vacuum/mop, quick bathroom & kitchen refresh</li>
-          <li>Minor touch-ups</li>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <h2>Fast, reliable turnovers for landlords & property managers in NE Oklahoma</h2>
+        <p>Cleaning • Handyman • Punch-list • Rent-ready. We turn units quickly so you can get back to cash flow.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#quote">Get an Instant Estimate</a>
+          <a class="btn ghost" href="#book">Book a Job</a>
+        </div>
+        <ul class="hero-bullets">
+          <li>✔ Turn-key: cleaning + repair</li>
+          <li>✔ Same-week availability (when open)</li>
+          <li>✔ Clear pricing and scope</li>
         </ul>
       </div>
-      <div class="tier featured">
-        <h4>Standard</h4>
-        <p>Most common turnover scope for average condition units.</p>
-        <ul>
-          <li>Full move-out clean incl. appliances exterior, blinds, baseboards</li>
-          <li>Punch-list: small repairs, bulbs, caulk, hardware</li>
-        </ul>
+      <div class="hero-card" aria-label="Quick facts">
+        <div class="kpi">
+          <span class="kpi-num">24–72h</span>
+          <span class="kpi-label">Typical Turn Time</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-num">NE OK</span>
+          <span class="kpi-label">Service Area</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-num">Quote</span>
+          <span class="kpi-label">Instant Calculator</span>
+        </div>
       </div>
-      <div class="tier">
-        <h4>Premier</h4>
-        <p>Heavier cleans and extended punch-list for tougher turns.</p>
-        <ul>
-          <li>Deep clean incl. appliance interiors</li>
-          <li>Extended punch-list time</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="quote" class="container section">
-    <h3>Instant Quote Calculator</h3>
-    <form id="quote-form" class="quote-form" onsubmit="return false;">
-      <div class="grid">
-        <label>
-          <span>Square Footage</span>
-          <input id="sqft" type="number" min="200" step="10" placeholder="e.g., 1200" required/>
-        </label>
-        <label>
-          <span>Tier</span>
-          <select id="tier">
-            <option value="basic">Basic</option>
-            <option value="standard" selected>Standard</option>
-            <option value="premier">Premier</option>
-          </select>
-        </label>
+    <section id="services" class="container section">
+      <h3>Services</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Turnover Cleaning</h4>
+          <p>Move-out clean: kitchens, baths, floors, baseboards, blinds, interior windows, and more.</p>
+        </article>
+        <article class="card">
+          <h4>Handyman & Punch-list</h4>
+          <p>Repairs, fixture swaps, caulking, drywall patches, hardware installs, smoke detectors, safety items.</p>
+        </article>
+        <article class="card">
+          <h4>Make-Ready Add-ons</h4>
+          <p>Appliance deep clean, carpet shampoo, yard tidy, touch-up paint, lock changes, trash haul-off.</p>
+        </article>
       </div>
-      <fieldset class="addons">
-        <legend>Add-ons (optional)</legend>
-        <label><input type="checkbox" class="addon" data-key="appliance_interior"/> Appliance deep clean</label>
-        <label><input type="checkbox" class="addon" data-key="carpet_shampoo"/> Carpet shampoo (per room)</label>
-        <input id="carpetRooms" type="number" min="0" step="1" value="0" class="inline-input" aria-label="Carpet rooms"/>
-        <label><input type="checkbox" class="addon" data-key="yard_tidy"/> Yard tidy / debris</label>
-        <label><input type="checkbox" class="addon" data-key="windows_interior"/> Interior windows</label>
-      </fieldset>
-      <div class="cta-row">
-        <button class="btn primary" id="calcBtn">Calculate Estimate</button>
-        <button class="btn ghost" id="copyBtn" type="button">Copy Summary</button>
+    </section>
+
+    <section id="pricing" class="container section">
+      <h3>Transparent Pricing Tiers</h3>
+      <p class="muted">These are starting estimates; final quotes depend on condition and chosen add-ons. You can fine-tune rates in <code>script.js</code>.</p>
+      <div class="tiers">
+        <div class="tier">
+          <h4>Basic</h4>
+          <p>Light make-ready for cleaner units.</p>
+          <ul>
+            <li>Surface clean, quick kitchen & bath refresh</li>
+            <li>Minor touch-ups</li>
+          </ul>
+        </div>
+        <div class="tier featured">
+          <h4>Standard</h4>
+          <p>Most common scope for average condition units.</p>
+          <ul>
+            <li>Full move-out clean incl. blinds & baseboards</li>
+            <li>Small punch-list (bulbs, caulk, hardware)</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <h4>Premier</h4>
+          <p>Heavier cleans and extended punch-list.</p>
+          <ul>
+            <li>Deep clean incl. appliance interiors</li>
+            <li>Extended punch-list time</li>
+          </ul>
+        </div>
       </div>
-      <div id="result" class="result"></div>
-    </form>
-  </section>
+    </section>
 
-  <section id="book" class="container section">
-    <h3>Book a Job</h3>
-    <p>Ready to go? Use our online booking to request a date and share unit details.</p>
-    <a class="btn primary" id="jobberLink" href="#" target="_blank" rel="noopener">Open Booking Form</a>
-    <p class="muted small">Paste your Jobber public booking link into <code>script.js</code> (see <em>CONFIG.jobberBookingUrl</em>).</p>
-  </section>
+    <section id="quote" class="container section">
+      <h3>Instant Quote Calculator</h3>
+      <form id="quote-form" class="quote-form" onsubmit="return false;">
+        <div class="grid">
+          <label>
+            <span>Square Footage</span>
+            <input id="sqft" type="number" min="200" step="10" placeholder="e.g., 1200" required/>
+          </label>
+          <label>
+            <span>Tier</span>
+            <select id="tier">
+              <option value="basic">Basic</option>
+              <option value="standard" selected>Standard</option>
+              <option value="premier">Premier</option>
+            </select>
+          </label>
+        </div>
+        <fieldset class="addons">
+          <legend>Add-ons (optional)</legend>
+          <label><input type="checkbox" class="addon" data-key="appliance_interior"/> Appliance deep clean</label>
+          <label><input type="checkbox" class="addon" data-key="carpet_shampoo"/> Carpet shampoo (per room)</label>
+          <input id="carpetRooms" type="number" min="0" step="1" value="0" class="inline-input" aria-label="Carpet rooms"/>
+          <label><input type="checkbox" class="addon" data-key="yard_tidy"/> Yard tidy / debris</label>
+          <label><input type="checkbox" class="addon" data-key="windows_interior"/> Interior windows</label>
+        </fieldset>
+        <div class="cta-row">
+          <button class="btn primary" id="calcBtn">Calculate Estimate</button>
+          <button class="btn ghost" id="copyBtn" type="button">Copy Summary</button>
+        </div>
+        <div id="result" class="result" aria-live="polite"></div>
+      </form>
+    </section>
 
-  <section id="contact" class="container section">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:ak@propertysolutions.example">ak@propertysolutions.example</a> &nbsp;•&nbsp;
-       Service area: Claremore, Tulsa, Shawnee & nearby</p>
-    <p class="muted small">A&K Property Solutions LLC — Oklahoma</p>
-  </section>
+    <section id="book" class="container section">
+      <h3>Book a Job</h3>
+      <p>Ready to go? Use our online booking to request a date and share unit details.</p>
+      <a class="btn primary" id="jobberLink" href="#" target="_blank" rel="noopener">Open Booking Form</a>
+      <p class="muted small">Paste your Jobber public booking link into <code>script.js</code> (see <em>CONFIG.jobberBookingUrl</em>).</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:ak@propertysolutions.example">ak@propertysolutions.example</a></p>
+      <p>Service area: Claremore, Tulsa, Shawnee & nearby</p>
+      <address class="muted small">A&K Property Solutions LLC — Oklahoma</address>
+    </section>
+  </main>
 
   <footer class="container footer">
     <p>&copy; <span id="year"></span> A&K Property Solutions LLC. All rights reserved.</p>
